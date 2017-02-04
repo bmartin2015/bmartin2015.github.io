@@ -9,5 +9,38 @@
 		<p>This is my quick and dirty page on dinosaurs. It's really not designed to have a lot of content, but more as an example of <em>HTML</em>.</p>
 		<p>Unfortunately, there is not going to be a lot of style on this page, but maybe someday we'll fix it up to look a bit nicer.</p>
 	</section>
+	<section>
+		<h3>My Favorite Dinosaur</h3>
+		<p>Ever since I saw Jurassic Park, one of my favorite dinosaurs is the velociraptor. The kind of funny thing is that the "velociraptors" in the movie and book are actually modeled after deinonychus, a slightly larger, related species found in Montana. Both belong to the family Dromaeosauridae, which includes several other raptor species.</p>
+		<p><img src="Vraptor-scale.png" alt="Size comparison of Velociraptor to a human"><br>By Matt Martyniuk (English: self-madeNederlands: zelf gemaakt) [<a href="http://creativecommons.org/licenses/by/2.5">CC BY 2.5</a>], <a href="https://commons.wikimedia.org/wiki/File%3AVraptor-scale.png">via Wikimedia Commons</a></p>
+		<p>Fun facts about raptors:</p>
+		<ul>
+			<li>They were bipedal</li>
+			<li>They had "the claw" that was featured in Jurassic Park</li>
+			<li>They had long tails</li>
+			<li>They ranged in size from 2 feet to over 20 feet in length</li>
+			<li>They probably were covered in feathers</li>
+		</ul>
+	</section>
+		<section>
+		<div>
+			<h3>What dinosaur do you like?</h3>
+			<form name="fav-dino" action="https://httpbin.org/post" method="post">
+				<div>
+					<label>Favorite Dinosaur:</label>
+					<input type="text" name="dino-name">
+				</div>
+				<div>
+					<textarea name="dino-why">Tell me why?</textarea>
+				</div>
+				<div>
+					<button type="submit">Submit</button>
+				</div>
+			</form>
+		</div>
+	</section>
+	<footer>
+		<p><a href="about.html">About Me</a></p>
+	</footer>
 </body>
 </html>
