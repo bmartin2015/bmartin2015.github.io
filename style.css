@@ -44,3 +44,11 @@ a:visited {
 a:hover {
 	font-weight: bold;
 }
+
+/* The background image doesn't look good when on a small screen,
+   so we will hide it. */
+@media screen and (max-width: 500px) {
+	#dino_bg {
+		background: lightgrey;
+	}
+}
