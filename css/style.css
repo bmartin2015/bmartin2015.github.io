@@ -6,7 +6,7 @@
 /* @import url('http://thecodeplayer.com/uploads/fonts/font-awesome-4.1.0/css/font-awesome.min.css'); */
 
 /* Icons from Themify for brand icons */
-@import 'themify-icons/themify-icons';
+@import url(https://cdn.jsdelivr.net/themify-icons/0.1.2/css/themify-icons.css);
 
 /*basic reset*/
 * {margin: 0; padding: 0; box-sizing: border-box;}
@@ -82,6 +82,7 @@ a {
 /* Test */
 .material-icons.md-18 { font-size: 18px; }
 .material-icons.md-12 { font-size: 12px; }
+.ti-md-18 { font-size: 25px; }
 
 .center { text-align: center; }
 .body-text { margin: 5px 5px 5px 5px; }
