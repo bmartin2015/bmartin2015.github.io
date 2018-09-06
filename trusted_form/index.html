@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>This is My TF Test</title>
+  <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
+</head>
+<body>
+  <div class="container">
+    <div class="columns">
+      <div class="column col-10 col-mr-auto">
+        <form action="https://app.leadconduit.com/flows/5b32874ba3279b5c57f36374/sources/5457a8915c873cf35b11f785/submit" method="post">
+          <div class="form-group">
+            <label class="form-label" for="first_name">First Name</label>
+            <input class="form-input" type="text" id="first_name" name="first_name" placeholder="first name">
+          </div>
+          <p>By agreeing to <a href="https://activeprospect.com/terms-of-service/">these</a> terms, I become HULK</p>
+          <button class="btn btn-primary">Become HULK</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- Generate a TrustedForm Certificate -->
+  <script type="text/javascript">
+  (function() {
+      var field = 'xxTrustedFormCertUrl';
+      var provideReferrer = false;
+      var tf = document.createElement('script');
+      tf.type = 'text/javascript'; tf.async = true; 
+      tf.src = 'http' + ('https:' == document.location.protocol ? 's' : '') +
+      '://api.trustedform.com/trustedform.js?provide_referrer=' + escape(provideReferrer) + '&field=' + escape(field) + '&l='+new Date().getTime()+Math.random() + '&disable_video=true';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(tf, s); }
+  )();
+  </script>
+  <noscript>
+      <img src="http://api.trustedform.com/ns.gif" />
+  </noscript>
+</body>
+</html>
