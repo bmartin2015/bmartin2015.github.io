@@ -15,24 +15,28 @@
             <label class="form-label" for="first_name">First Name</label>
             <input class="form-input" type="text" id="first_name" name="first_name" placeholder="first name">
           </div>
-          <p>By agreeing to <a href="https://activeprospect.com/terms-of-service/">these</a> terms, I become HULK</p>
+          <p>Does QuinStreet and up to 4 Home Improvement companies have consent to contact you via phone or text message at the wireless or landline phone number you provided, possibly using automated technology? Your consent does not mean you are under obligation to</p>
           <button class="btn btn-primary">Become HULK</button>
         </form>
+        <a onclick="javascript:loadTrustedForm();">Load TrustedForm Manually</a>
       </div>
     </div>
   </div>
   <!-- Generate a TrustedForm Certificate -->
   <script type="text/javascript">
-  (function() {
-      var field = 'xxTrustedFormCertUrl';
-      var provideReferrer = false;
-      var tf = document.createElement('script');
-      tf.type = 'text/javascript'; tf.async = true; 
-      tf.src = 'http' + ('https:' == document.location.protocol ? 's' : '') +
-      '://api.trustedform.com/trustedform.js?provide_referrer=' + escape(provideReferrer) + '&field=' + escape(field) + '&l='+new Date().getTime()+Math.random() + '&disable_video=true';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(tf, s); }
-  )();
-  </script>
+    function loadTrustedForm() {
+        (function() {
+          var field = 'xxTrustedFormCertUrl';
+          var provideReferrer = false;
+          var invertFieldSensitivity = false;
+          var tf = document.createElement('script');
+          tf.type = 'text/javascript'; tf.async = true;
+          tf.src = 'http' + ('https:' == document.location.protocol ? 's' : '') +
+            '://api.trustedform.com/trustedform.js?provide_referrer=' + escape(provideReferrer) + '&field=' + escape(field) + '&l='+new Date().getTime()+Math.random() + '&invert_field_sensitivity=' + invertFieldSensitivity;
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(tf, s); }
+      )();
+    }
+    </script>
   <noscript>
       <img src="http://api.trustedform.com/ns.gif" />
   </noscript>
