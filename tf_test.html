@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <base href="/">
   <title></title>
 </head>
 <body>
@@ -12,6 +13,7 @@
     <input type="text" name="email" placeholder="Email">
     <button type="submit">Save</button>
   </form>
+  <img src="fun.gif">
 <!-- Generate a TrustedForm Certificate -->
 <script type="text/javascript">
 (function() {
@@ -20,7 +22,7 @@
     var tf = document.createElement('script');
     tf.type = 'text/javascript'; tf.async = true; 
     tf.src = 'http' + ('https:' == document.location.protocol ? 's' : '') +
-    '://api.trustedform.com/trustedform.js?provide_referrer=' + escape(provideReferrer) + '&field=' + escape(field) + '&l='+new Date().getTime()+Math.random();
+    '://api.staging.trustedform.com/trustedform.js?provide_referrer=' + escape(provideReferrer) + '&field=' + escape(field) + '&l='+new Date().getTime()+Math.random();
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(tf, s); }
 )();
 </script>
